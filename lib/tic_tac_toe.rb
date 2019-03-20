@@ -84,9 +84,7 @@ class TicTacToe
 
   def play
     "Please enter 1-9"
-    until over?
-      turn
-    end
+    turn until over?
     if won?
       puts "Congratulations #{winner}!"
     elsif draw?
